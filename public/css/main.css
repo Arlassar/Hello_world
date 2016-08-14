@@ -46,6 +46,24 @@ ul li:hover ul {
 ul ul {
     display: none;
 }
+table , td, tr{
+    border: 1px solid;
+    border-collapse: collapse;
+}
+tr{
+    height: 30px;
+}
+td{
+    width: 90px;
+}
+textarea{
+    width: 756px;
+    height: 150px;
+}
+input{
+    width: 366px;
+    height: 60px;
+}
 .logo {
     display: inline-block;
 }
