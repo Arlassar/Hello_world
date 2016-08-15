@@ -159,6 +159,13 @@ input{
     padding-bottom: 6px;
     border-bottom: 2px solid #fff;
 }
+#icons{
+    display: inline-block;
+    margin: 50px auto;
+}
+#icons a{
+    margin: 0 20px;
+}
 #left{
     width: 49%;
     display:inline-block;
