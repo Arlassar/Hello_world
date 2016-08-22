@@ -3,41 +3,36 @@
 body{
     background-color: #f7f9fc;
     font-family: 'Lato', sans-serif;
+    margin: 0;
 }
-img{
-    margin: 50px 0 25px 0;
+article img{
+    margin: -98px 0 50px -98px;
+}
+article{
+    margin-bottom: 50px;
+    padding: 98px 98px 82px;
+    background: #fff;
+    box-shadow: 0 0 25px rgba(0,0,0,0.1);
+
 }
 p{
     color: #333;
     font-size: 17px;
+    margin: 16px 0 0 0;
 }
 h2{
     font-size: 40px;
+    margin-top: 0;
 }
-big, small{
-    color: #bdbdbd;
-}
-p, h1, h2, h3, h4, h5, h6, blockquote, button{
+
+/*p, h1, h2, h3, h4, h5, h6, blockquote, button{
     margin: 0 70px;
-}
+}*/
 hr{
     color: #eee;
-    margin: 40px 70px;
+    margin: 40px 0;
 }
 
-address{
-    display: inline;
-    opacity: 0.4;
-
-
-}
-address a{
-    color: #fff;
-    font-weight: bold;
-    text-decoration: none;
-    font-style: normal;
-    opacity: 1;
-}
 
 ul li:hover ul {
     display: block;
@@ -59,13 +54,116 @@ td{
 textarea{
     width: 756px;
     height: 150px;
+    background: #f7f9fc;
+    font-size: 20px;
+    color: #333;
+    opacity: 0.3;
+    border: none;
+    padding: 0 32px;
 }
 input{
-    width: 366px;
+    width: 276px;
     height: 60px;
+    display: inline-block;
+    background: #f7f9fc;
+    font-size: 20px;
+    color: #333;
+    opacity: 0.3;
+    border: none;
+    margin: 0 32px 32px 0;
+    padding: 0 32px;
+}
+input:focus, textarea:focus{
+    color:  transparent;
+}
+input:invalid {
+    color: red;
+}
+input:[name="subject"]{
+    width: 758px;
+}
+a{
+    color: #5c6bc0;
+}
+a:hover{
+    color: #9db8e2;
+}
+.wrapper{
+    display: block;
+    margin: 0 auto;
+    width: 952px;
+}
+.date{
+    color: #bdbdbd;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 36px;
+}
+.category, .cit{
+    display: inline-block;
+    color: #bdbdbd;
+    font-size: 14px;
+    margin: 35px 0 0 10px;
+}
+.larger{
+    color: #bdbdbd;
+    font-size: 26px;
+    font-style: italic;
+    margin-bottom: 14px;
+}
+.more{
+    font-size: 20px;
+    text-decoration: none;
+    color: #5c6bc0;
+}
+.more:hover{
+    color: #9db8e2;
+}
+.post_entry:before{
+    content: "";
+    display: block;
+    width: 758px;
+    height: 2px;
+    background: #eeeeee;
+    margin: 40px 0;
+}
+/*----------------------------------HEADER--------------------------------*/
+header{
+    display: block;
+    background-color: #f7f9fc;
+    height: 190px;
+}
+nav{
+    display: inline-block;
+    float: right;
+    margin-top: 90px;
+}
+nav ul{
+    margin:  0;
+    padding: 0;
+    list-style: none;
+    font-size: 16px;
+}
+nav ul li{
+    display: inline-block;
+    font-weight: bold;
+}
+nav ul li a{
+    text-decoration: none;
+    font-size: 16px;
+    color: #333333;
+    margin: 0 20px 0 0;
+}
+nav ul li a:hover {
+    padding-bottom: 6px;
+    border-bottom: 2px solid #5c6bc0;
+}
+nav ul li a:active {
+    color: #bdbdbd;      /*NE RABOTAET, VANYA PODSCAJY KAK POFIXIT'*/
 }
 .logo {
     display: inline-block;
+    margin: 80px 0;
 }
 .logo a{
     text-decoration: none;
@@ -73,6 +171,16 @@ input{
     font-size: 42px;
     font-style: italic;
     color: #333;
+}
+/*----------------------------------END OF HEADER--------------------------------*/
+
+/*----------------------------------FOOTER--------------------------------*/
+footer{
+    display: block;
+    background: #5c6bc0;
+    text-align: center;
+    margin-top: 50px;
+    padding: 70px 0 80px 0;
 }
 .footer_logo {
     display: block;
@@ -85,55 +193,27 @@ input{
     color: #000;
     opacity: 0.2;
 }
-.footer p{
+footer p{
     color: #fff;
     opacity: 0.4;
+    font-size: 13px;
+    margin: auto;
 }
-.wrapper{
-    display: block;
-    background: #fff;
-    margin: 0 auto;
-    width: 952px;
-}
-.header{
-    display: block;
-    background-color: #f7f9fc;
-    height: 190px;
-}
-.footer{
-    display: block;
-    background: #5c6bc0;
-    text-align: center;
-    margin-top: 50px;
-    padding: 50px 0 50px 0;
-}
-#menu{
-    display: inline-block;
-    float: right;
-    margin-top: 24px;
-}
-#menu ul{
-    margin:  0;
-    padding: 0;
-    list-style: none;
-    font-size: 16px;
-}
-#menu ul li{
-    display: inline-block;
+footer a{
+    color: #fff;
     font-weight: bold;
-}
-#menu ul li a{
     text-decoration: none;
-    font-size: 16px;
-    color: #333333;
-    margin: 0 20px 0 0;
+    font-style: normal;
+    opacity: 1;
 }
-#menu ul li a:hover {
-    padding-bottom: 6px;
-    border-bottom: 2px solid #5c6bc0;
+footer hr{
+    border-color: #000;
+    opacity: 0.1;
 }
-#menu ul li a.active {
-    color: #bdbdbd;      /*NE RABOTAET, VANYA PODSCAJY KAK POFIXIT'*/
+.fcontent{
+    width: 758px;
+    margin: 0 auto;
+    padding: 0 ;
 }
 #footer_menu{
     display: inline-block;
@@ -159,13 +239,23 @@ input{
     padding-bottom: 6px;
     border-bottom: 2px solid #fff;
 }
+address{
+    display: inline;
+    opacity: 0.4;
+    color: #fff;
+    font-size: 14px;
+}
 #icons{
-    display: inline-block;
-    margin: 50px auto;
+    display: block;
+    margin: 40px auto 0;
 }
-#icons a{
-    margin: 0 20px;
+#icons img{
+    margin: 0 12px;
 }
+/*----------------------------------END OF FOOTER--------------------------------*/
+
+
+
 #left{
     width: 49%;
     display:inline-block;
