@@ -22,22 +22,28 @@
                 <li><a href="index.html">HOME</a></li>
                 <li><a href="about.html">ABOUT</a></li>
                 <li><a href="archive.html">ARCHIVE</a></li>
-                <li><a href="contacts.html">CONTACT</a></li>
+                <li><a class="inactive" href="contacts.html">CONTACT</a></li>
+                <li><a class="search_icon" href="search.html">&nbsp;</a></li>
             </ul>
         </nav>
     </header>
     <article>
-        <h2>
-            Contact Us
-        </h2>
+        <h2 class="pagename">Contact Us</h2>
         <p>
             Nam in maximus arcu, ac aliquam tellus. Donec vestibulum ipsum nunc, at placerat ante posuere non. Integer at dui a lacus suscipit elementum id non massa. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nunc eu neque eros. Ut eu quam justo.    </p>
         <div class="post_entry">
-            <input type="text" size="40" name="name" placeholder="Your Name">
-            <input type="email" required size="40" name="mail" placeholder="Email">
+            <div class="contact_left">
+                <input type="text" size="40" name="name" placeholder="Your Name">
+            </div>
+            <div class="contact_right">
+                <input type="email" required size="40" name="mail" placeholder="Email">
+            </div>
             <input type="text" name="subject" placeholder="Subject">
             <textarea cols="82" name="message"  placeholder="Your Message"></textarea>
-            <input class="more" type="submit" value="Send message">
+            <div class="submit">
+                <input class="more" type="submit" value="Send message">
+            </div>
+
         </div>
     </article>
 </div>
@@ -48,10 +54,11 @@
         </div>
         <div id="footer_menu">
             <ul>
-                <li><a href="index.html">HOME</a></li>
+                <li><a class="inactive" href="index.html">HOME</a></li>
                 <li><a href="about.html">ABOUT</a></li>
                 <li><a href="archive.html">ARCHIVE</a></li>
                 <li><a href="contacts.html">CONTACT</a></li>
+                <li><a class="search_icon" href="search.html">&nbsp;</a></li>
             </ul>
         </div>
         <hr>
@@ -59,7 +66,7 @@
             Nunc placerat dolor at lectus hendrerit dignissim. Ut tortor sem, consectetur nec hendrerit ut, ullamcorper ac odio. Donec viverra ligula at quam tincidunt imperdiet. Nulla mattis tincidunt auctor.
         </p>
         <hr>
-        <address>© 2015 - Palo Alto. All Rights Reserved. Designed & Developed by &nbsp</address><a href="#">PixelBuddha Team</a>
+        <address>© 2015 - Palo Alto. All Rights Reserved. Designed & Developed by &nbsp</address><a class="adress" href="#">PixelBuddha Team</a>
         <div id="icons">
             <a href="https://www.facebook.com/" target="_blank"> <img src="../img/fb.png" alt="facebook" height="24" width="24"/></a>
             <a href="https://twitter.com/?lang=ru " target="_blank"><img src="../img/tw.png" alt="twitter" height="24" width="24"/></a>

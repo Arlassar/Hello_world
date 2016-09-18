@@ -23,14 +23,16 @@
                 <li><a href="about.html">ABOUT</a></li>
                 <li><a href="archive.html">ARCHIVE</a></li>
                 <li><a href="contacts.html">CONTACT</a></li>
+                <li><a class="search_icon inactive" href="search.html">&nbsp;</a></li>
             </ul>
         </nav>
     </header>
     <article>
-        <h2>Search results for «interesting»</h2>
+        <h2 class="pagename">Search results for «interesting»</h2>
         <p class="larger">10 Items Found</p>
     </article>
     <article>
+        <a class="mark" href="#">I Do Travel</a>
         <p class="date">Sep 20</p>
         <h2>
             No difference how many peaks you reach if there was no pleasure in the climb.
@@ -39,18 +41,21 @@
             <p>
                 Quisque congue lacus mattis massa luctus, nec hendrerit purus aliquet. Ut ac elementum urna. Pellentesque suscipit metus et egestas congue. Duis eu pellentesque turpis, ut maximus metus. Sed ultrices tellus vitae rutrum congue. Fusce luctus augue id nisl suscipit, vel sollicitudin orci egestas. Morbi posuere venenatis ipsum, ac vestibulum quam dignissim efficitur. Ut vitae rutrum augue, in volutpat quam. Cras a viverra ipsum. Aenean ut consequat ex, vitae vulputate nunc. Vestibulum metus nisi, aliquam sed tincidunt sit amet, pretium et augue.
             </p>
-            <a class="more" href="post.html"> READ MORE</a>
-            <p class="category">#Yosemite</p>    <p class="category">#Peak</p>   <p class="category">#Explorer</p>
+            <a class="more" href="post.html">read more</a>
+            <div class="category_container">
+                <p class="category">#<a href="#">Yosemite</a></p>    <p class="category">#<a href="#">Peak</a></p>   <p class="category">#<a href="#">Explorer</a></p>
+            </div>
         </div>
     </article>
     <article>
-        <img src="../img/img_1.jpg" alt="Mountain" height="533" width="952"/>
+        <a class="mainimg" href="post.html"> <img src="../img/img_1.jpg" alt="Mountain" height="533" width="952"/></a>
+        <a class="mark" href="#">I Do Observe</a>
         <p class="date">Sep 18</p>
         <h2>
             You know, I'd rather argue with you, then laugh with anyone else.
         </h2>
         <div class="post_entry">
-            <p class="larger">Curabitur luctus placerat lorem id eleifend. Nulla ac lacus finibus, tempor velit hendrerit, vulputate lacus. Nunc fermentum nunc sem, ac eleifend tellus cursus nec. Donec a euismod est, vitae accumsan purus. Proin aliquet ex massa, ac finibus magna commodo vitae.
+            <p class="larger"> urabitur luctus placerat lorem id eleifend. Nulla ac lacus finibus, tempor velit hendrerit, vulputate lacus. Nunc fermentum nunc sem, ac eleifend tellus cursus nec. Donec a euismod est, vitae accumsan purus. Proin aliquet ex massa, ac finibus magna commodo vitae.
             </p>
             <p>
                 Quisque congue lacus mattis massa luctus, nec hendrerit purus aliquet. Ut ac elementum urna. Pellentesque suscipit metus et egestas congue. Duis eu pellentesque turpis, ut maximus metus. Sed ultrices tellus vitae rutrum congue. Fusce luctus augue id nisl suscipit, vel sollicitudin orci egestas. Morbi posuere venenatis ipsum, ac vestibulum quam dignissim efficitur. Ut vitae rutrum augue, in volutpat quam. Cras a viverra ipsum. Aenean ut consequat ex, vitae vulputate nunc. Vestibulum metus nisi, aliquam sed tincidunt sit amet, pretium et augue.
@@ -58,12 +63,29 @@
             <p>
                 Sed sagittis commodo dolor. Vivamus elementum sem sed sapien bibendum viverra. Curabitur semper scelerisque turpis eu ullamcorper. Morbi tincidunt auctor orci id consequat. Nulla odio mi, iaculis id congue quis, euismod id nisi. In varius congue diam, et viverra lorem bibendum ut.
             </p>
-            <a class="more" href="post.html"> READ MORE</a>
-            <p class="category">#Yosemite</p>    <p class="category">#Peak</p>   <p class="category">#Photo</p>
+            <a class="more" href="post.html">read more</a>
+            <div class="category_container">
+                <p class="category">#<a href="#">Yosemite</a></p>    <p class="category">#<a href="#">Peak</a></p>   <p class="category">#<a href="#">Photo</a></p>
+            </div>
         </div>
     </article>
     <article>
-        <img src="../img/img_2.jpg" alt="Images" height="593" width="952"/>
+        <div class="imggroup">
+            <div class="imgleft">
+                <img src="../img/imggroup_1.jpg" alt="1" height="260" width="464"/>
+                <img src="../img/imggroup_2.jpg" alt="1" height="308" width="464"/>
+            </div>
+            <div class="imgright">
+                <img src="../img/imggroup_3.jpg" alt="1" height="328" width="464"/>
+                <div class="cover"></div>
+                <div class="counter">
+                    <p class="count">21</p>
+                    <p>photos</p>
+                </div>
+                <img class="imgcounter" src="../img/imggroup_4.jpg" alt="1" height="242" width="464"/>
+            </div>
+        </div>
+        <a class="mark" href="#">I Do Photos</a>
         <p class="date">Sep 14</p>
         <h2>
             Everything in the universe has a rhythm, everything dances.
@@ -72,26 +94,41 @@
             <p>
                 Donec hendrerit magna vitae metus viverra tincidunt. Cras dolor lacus, placerat sed nulla in, egestas pharetra neque. Sed sit amet aliquet erat. Integer nec mi convallis, condimentum odio quis, pharetra tellus. Donec mollis libero in volutpat luctus. Cras laoreet pulvinar dapibus. Nulla laoreet odio at nunc semper vestibulum. Sed magna mauris, molestie eu ipsum et, pharetra egestas neque.
             </p>
-            <a class="more" href="post.html"> READ MORE</a>
-            <p class="category">#Yosemite</p>    <p class="category">#Photo</p> <p class="category">#Hi-res</p>
+            <a class="more" href="post.html">read more</a>
+            <div class="category_container">
+                <p class="category">#<a href="#">Yosemite</a></p>    <p class="category">#<a href="#">Photo</a></p>   <p class="category">#<a href="#">Hi-res</a></p>
+            </div>
         </div>
     </article>
     <article>
         <img src="../img/img_3.jpg" alt="Video" height="535" width="952"/>
+        <a class="mark" href="#">I Do Watch</a>
         <p class="date">Sep 14</p>
         <h2>
             As human beings, we have a natural compulsion to fill empty spaces.
         </h2>
-        <p class="category">#Yosemite</p>    <p class="category">#Peak</p>   <p class="category">#Photo</p>
+        <div class="noRM">
+            <div class="category_container">
+                <p class="category">#<a href="#">Yosemite</a></p>    <p class="category">#<a href="#">Peak</a></p>   <p class="category">#<a href="#">Photo</a></p>
+            </div>
+        </div>
     </article>
     <article>
+        <a class="mark" href="#">I Do Quote</a>
         <h2>
-            <q><em>There is always something left to love.
+            <div class="q"><em>There is always something left to love.
                 And if you ain’t learned that, you
-                ain’t learned nothing.</em></q>
+                ain’t learned nothing.</em></div>
         </h2>
         <p class="cit">— Lorraine Hansberry</p>
     </article>
+    <div class="pagination">
+        <ul>
+            <li><a class="pagenumber current">1</a></li>
+            <li><a class="pagenumber">2</a></li>
+            <li><a class="pagenumber">3</a></li>
+        </ul>
+    </div>
 
 </div>
 <footer>
@@ -101,10 +138,11 @@
         </div>
         <div id="footer_menu">
             <ul>
-                <li><a href="index.html">HOME</a></li>
+                <li><a class="inactive" href="index.html">HOME</a></li>
                 <li><a href="about.html">ABOUT</a></li>
                 <li><a href="archive.html">ARCHIVE</a></li>
                 <li><a href="contacts.html">CONTACT</a></li>
+                <li><a class="search_icon" href="search.html">&nbsp;</a></li>
             </ul>
         </div>
         <hr>
@@ -112,7 +150,7 @@
             Nunc placerat dolor at lectus hendrerit dignissim. Ut tortor sem, consectetur nec hendrerit ut, ullamcorper ac odio. Donec viverra ligula at quam tincidunt imperdiet. Nulla mattis tincidunt auctor.
         </p>
         <hr>
-        <address>© 2015 - Palo Alto. All Rights Reserved. Designed & Developed by &nbsp</address><a href="#">PixelBuddha Team</a>
+        <address>© 2015 - Palo Alto. All Rights Reserved. Designed & Developed by &nbsp</address><a class="adress" href="#">PixelBuddha Team</a>
         <div id="icons">
             <a href="https://www.facebook.com/" target="_blank"> <img src="../img/fb.png" alt="facebook" height="24" width="24"/></a>
             <a href="https://twitter.com/?lang=ru " target="_blank"><img src="../img/tw.png" alt="twitter" height="24" width="24"/></a>
